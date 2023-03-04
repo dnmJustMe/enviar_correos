@@ -7,7 +7,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "app/enviar_correo.php",
+      url: "http://dnmenviarcorreo.000webhostapp.com/app/enviar_correo.php",
       data: {
         de: de,
         para: para,
@@ -16,11 +16,11 @@ $(function () {
       },
       success: function (respuesta) {
         console.log(respuesta)
-        /* if (respuesta == 1) {
+        if (respuesta == 1) {
           console.log("enviado")
         } else {
           console.log("error")
-        } */
+        }
       },
       error: function (err) {
         console.log("ha ocurrido un error")
