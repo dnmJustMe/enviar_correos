@@ -7,7 +7,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "http://dnmenviarcorreo.000webhostapp.com/app/enviar_correo.php",
+      url: "https://dnmenviarcorreo.000webhostapp.com/app/enviar_correo.php",
       data: {
         de: de,
         para: para,
