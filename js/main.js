@@ -5,6 +5,5 @@ $(function () {
         var asunto = $('#asunto').val()
         var mensaje = $('#mensaje').val()
 
-        console.log(de + " " + para + " " + asunto + " " + mensaje)
     })
 })
