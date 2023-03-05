@@ -1,53 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Una aplicación destinada a mejorar y facilitar el envío de correos electrónicos.">
+    <meta name="author" content="justMe">
+
+    <meta property="og:site_name" content="Enviar correos" />
+    <meta property="og:site" content="https://dnmjustme.github.io/enviar_correos/" />
+    <meta property="og:title" content="Enviar correos" />
+    <meta property="og:description" content="Una aplicación destinada a mejorar y facilitar el envío de correos electrónicos." />
+
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/alertas.min.css">
     <link rel="stylesheet" href="css/main.css">
+
     <title>Enviar correos</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row text-center mt-5">
-            <h1>Formulario de correos</h1>
-        </div>
-        <form class="mt-5" action="#">
-            <div class="input-group mb-5">
-                <span class="input-group-text" id="basic-addon1">De:</span>
-                <input type="email" class="form-control" placeholder="Email del destinatario."
-                    aria-label="Nombre de usuario" aria-describedby="basic-addon1" name="email-destinatario"
-                    id="email-destinatario">
-            </div>
-            <div class="input-group mb-5">
-                <span class="input-group-text" id="basic-addon2">Para:</span>
-                <input type="email" class="form-control" placeholder="Email de destino." aria-label="Nombre de usuario"
-                    aria-describedby="basic-addon2" name="email-destino" id="email-destino">
-            </div>
-            <div class="input-group mb-5">
-                <span class="input-group-text" id="basic-addon3">Asunto:</span>
-                <input type="text" class="form-control" placeholder="Asunto a tratar." aria-label="Nombre de usuario"
-                    aria-describedby="basic-addon3" name="asunto" id="asunto">
-            </div>
-            <div class="input-group">
-                <span class="input-group-text">Mensaje:</span>
-                <textarea class="form-control" aria-label="With textarea" name="mensaje" id="mensaje"></textarea>
-            </div>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="h1-large mt-3">Enviar correo</h1>
+                    <h2>Para enviar un correo ingresa los datos solicitados en el formulario.</h2>
+                    <p class="p-large">Este sitio utiliza recursos alojados en un servidor esxterno para realizar el
+                        envío de los correos.</p>
+                    <br>
+                    <p class="p-small">Copyright © <a href="https://dnmjustme.github.io/danielnavarro/">Daniel Navarro
+                            Machín</a></p>
+                </div>
+                <div class="col-md-6">
+                    <form class="mt-3" action="#" id="form">
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" id="basic-addon1">De:</span>
+                            <input type="email" class="form-control" placeholder="Email del destinatario."
+                                aria-label="Nombre de usuario" aria-describedby="basic-addon1" name="email-destinatario"
+                                id="email-destinatario">
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" id="basic-addon2">Para:</span>
+                            <input type="email" class="form-control" placeholder="Email de destino."
+                                aria-label="Nombre de usuario" aria-describedby="basic-addon2" name="email-destino"
+                                id="email-destino">
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" id="basic-addon3">Asunto:</span>
+                            <input type="text" class="form-control" placeholder="Asunto a tratar."
+                                aria-label="Nombre de usuario" aria-describedby="basic-addon3" name="asunto"
+                                id="asunto">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">Mensaje:</span>
+                            <textarea class="form-control" aria-label="With textarea" name="mensaje"
+                                id="mensaje"></textarea>
+                        </div>
 
-            
-        </form>
-        <div class="row mt-5">
-            <div class="col-md-12 text-center">
-                <button class="btn btn-danger mx-3" id="cancelar">Cancelar</button>
-                <button class="btn btn-success" id="enviar">Enviar</button>
+                        <div class="row mt-5">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-danger mx-3" id="cancelar" type="reset">Cancelar</button>
+                                <button class="btn btn-success" id="enviar">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+        <svg class="header-decoration" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 991 100"
+            preserveAspectRatio="none">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #f9fafc;
+                    }
+                </style>
+            </defs>
+            <title>header-decoration</title>
+            <polygon class="cls-1" points="991 100 0 100 0 0 494 41 991 0 991 100" />
+        </svg>
+    </header>
+
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>

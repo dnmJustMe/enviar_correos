@@ -16,3 +16,5 @@ header('content-type: application/json; charset=utf-8');
     $mensaje .= "Enviado el " . date('d/m/Y', time());
 
     $exito = mail($para, $asunto, utf8_decode($mensaje), $header);
+
+    echo $exito;
